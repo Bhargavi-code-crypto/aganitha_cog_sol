@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="images/logo.jpg" >
+    <link rel="stylesheet" href="style.css">
+      
+  </head>
+  <body>
+    <div class="row">
+
+      <div class="col">
+        <section>
+            <div class="section-0">
+                <div>
+                    <h1 class=" ">Understanding the fundamentals of state in Javascript</h1>
+                <div class=" myLink"><a href="" class="myAlink" >Designed by Gottumukkala Bhargavi</a></div>
+                </div>
+              </div>
+
+        </section>
+        <div class="main">
+        <section class="section-1">
+         
+          <div class="">
+            <p>Chapter 3 from the book; <b><i>Vumbula React</i></b> — Co-authored by
+                <b>John Kagga</b>
+            </p>
+            <p>
+
+                In earlier chapters, we’ve dealt mostly with functional React components that do not require state
+                management. This chapter’s main focus is on state, its management and components that utilise it in<a href="" class="first-thing-link">React</a>.
+            </p>
+          </div>
+
+          
+        </section>
+
+        <section class="section-2">
+            <h3> What is State</h3>
+            <p>State is a JavaScript object that stores a component’s dynamic data and determines the component’s
+                behaviour. Because state is dynamic, it enables a component to keep track of changing information in
+                between renders and for it to be dynamic and interactive.</p>
+
+            <p >
+                State is similar to props but unlike props, it is private to a component and is controlled solely by the
+                said component. In the examples from previous chapters, the behaviour of components has primarily
+                depended on the props that are passed down to them. In those cases, the components that receive the
+                props have no control over them because <a href="" class="frist-rule-link">props are read-only.</a> 
+            </p>
+
+            
+        </section>
+
+        <section class="section-3">
+            <h3>
+                Adding State to a Class Component
+            </h3>
+            <pre>class Greeting extends React.Component {
+                render(){
+                  return &lt;h1&gt;I’m a component in need of some state! &lt;/h1&gt;;
+                }
+              }</pre>
+
+            <p>
+                Adding state to the Greeting component above involves defining within the class component, a constructor
+          function that assigns the initial state using this.state.
+            </p>
+            <pre>
+                class Greeting extends React.Component {
+                    constructor(props) {
+                     super(props);
+                       // Define your state object here
+                       this.state = {
+                         name: ‘Jane Doe’
+                       }
+                     }
+                     render(){
+                       return &lt;h1&gt;Hello { this.state.name }&lt;/h1&gt;;
+                     }
+                  }
+            </pre>
+            <p>
+                 <a href="" class="text-itself-link"> React Dev Tools</a>
+            </p>
+
+        </section>
+
+
+        <section class="section-4">
+            <h3>Investigating State using React Dev Tools</h3>
+            <p>
+                The devtools are available for download on both <span>Mozilla Firefox Add-ons and the Chrome Web Store</span>. Follow
+          the appropriate link to install the devtools depending on which browser you have installed on your
+          computer.
+            </p>
+            
+
+            <p>Throughout the rest of this book, Chrome will be used as the browser of choice. In order to confirm
+                successful installation of the devtools on Chrome, <span>open the developer tools window using Cmd+Opt+I on a
+                Mac or Ctrl+Alt+I on a windows PC</span>.You should now see a <a href="" class="more-readable-lik">React tab.</a>.</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    <script src="first.js"></script>
+
+</main>  
+  </body>
+</html>
